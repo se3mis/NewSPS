@@ -1,0 +1,605 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+padding: 5px;
+/*background-color: #4B8EC0;*/
+/*background-image : url(basepage-1004.png);*/
+
+}
+
+/*^'^ Navigation Structure ^'^*/
+.nav-container-outer{
+/*background: #000000;*/
+/*margin: 100px 0px 50px 20px;*/
+padding-top:0px;
+padding: 0px;
+padding-bottom:0px;
+height: 28px;
+width : 100%;
+/*background: url(images/nav-bg.jpg);*/
+}
+.float-left{
+float: left;
+}
+.float-right{
+float: right;
+}
+.nav-container .divider{
+display:block;
+font-size:1px;
+background-color:red;
+border-width:0px;
+border-style:solid;
+}
+.nav-container .divider-vert{
+float:left;
+width:0px;
+display: none;
+}
+.nav-container .item-secondary-title{
+float : left;
+display:block;
+cursor:default;
+white-space:nowrap;
+}
+.nav-container a, .nav-container li{
+float:left;
+display:block;
+white-space:nowrap;
+}
+.nav-container div a, .nav-container ul a, .nav-container ul li{
+float:none;
+}
+.nav-container ul{
+left:-10000px;
+position:absolute;
+}
+.nav-container, .nav-container ul{
+list-style:none;
+padding:0px;
+margin:0px;
+}
+.nav-container li a{
+float:none
+}
+.nav-container li{
+position:relative;
+}
+.nav-container ul{
+z-index:10;
+}
+.nav-container ul ul{
+z-index:20;
+}
+.nav-container ul ul ul{
+z-index:30;
+}
+.nav-container ul ul ul ul{
+z-index:40;
+}
+.nav-container ul ul ul ul ul{
+z-index:50;
+}
+li:hover>ul{
+left:auto;
+}
+#nav-container ul {
+top:100%;
+}
+#nav-container ul li:hover>ul{
+top:0px;
+left:100%;
+}
+
+/*^'^ Primary Items ^'^*/	
+#nav-container a{	
+padding:7px 17px 7px 18px;
+margin: 0px 0px 0px 0px;
+color: #FFFFFF;
+font-family: Tahoma;
+font-size: 12px;
+text-decoration: none;
+/*font-weight: bold;*/
+background: url(item-primary-bg.gif);
+background-repeat: repeat;
+background-position: top;
+}
+
+#nav-container a:hover{
+/*color: #8CC2F0;*/
+color : #FFFFFF;
+background: url(item-primary-bg1.gif);
+background-repeat: repeat;
+background-position: center;
+}
+
+/*^'^ Secondary Items Container ^'^*/	
+#nav-container div, #nav-container ul{	
+padding:10px 4px 10px 4px;
+margin: 0px 0px 0px 0px;
+background: url(item-secondary-container-bg1.jpg);
+background-repeat: repeat;
+/*background-color: #8CC2F0;*/
+border-bottom: 1px solid #8CC2F0;
+}
+
+/*^'^ Secondary Items ^'^*/	
+#nav-container div a, #nav-container ul a{	
+padding:3px 10px 3px 6px;
+/*background-color: #FFFFFF;*/
+background: url(item-secondary-bg1.jpg);
+background-repeat: no-repeat;
+background-position: 0px 22px;
+font-size:12px;
+border-width:0px;
+text-decoration : none;
+border-style:none;
+margin: 0px 0px 0px 0px;
+width: 130px;
+}
+
+/*^'^ Secondary Items Hover State ^'^*/	
+#nav-container div a:hover, #nav-container ul a:hover{	
+/*background-color: #FFFFFF;*/
+background: url(item-secondary-bg.jpg);
+background-repeat: repeat;
+color:#000000;
+width : 130px;
+}
+
+/*^'^ Secondary Item Titles ^'^*/	
+#nav-container .item-secondary-title{	
+cursor:default;
+padding:40px 50px 3px 7px;
+color: #4481AE;
+font-family: Tahoma;
+font-size:12px;
+/* background: url(item-secondary-title-bg.jpg); */
+background-repeat: no-repeat;
+/*font-weight:bold;*/
+}
+
+/*^'^ Horizontal Dividers ^'^*/	
+#nav-container .divider-horiz{	
+border-top-width:1px;
+margin: 0px 5px;
+border-color: #4481AE;
+}
+
+/*^'^ Vertical Dividers ^'^*/	
+#nav-container .divider-vert{	
+border-left-width:1px;
+height:15px;
+margin:4px 2px 0px 2px;
+border-color:#AAAAAA;
+}
+
+/*   */
+.side_padding
+{
+
+padding:0 10px 0 10px;
+
+}
+
+.floatRight{
+
+float:right;
+
+}
+
+/*   List div sylte  */
+.listDivStyle{
+    /*background-color:#FBFFFF;
+    border-color:#000033;
+    background-color:#FFFF00;
+    */
+    background-color:#FFFF00;
+    border-color:#333333;
+    border-width:thin;
+    width:95%;
+    overflow: scroll;
+    height: 38px;
+    margin-left: auto ;
+    margin-right: auto ;
+    padding:5px 5px;
+    margin-top:8px ;
+    margin-bottom:8px ;
+    /*margin:4px 2px 0px 2px;*/
+    azimuth:center
+
+}
+
+.divTex{
+	font: bold normal small/1.4em Verdana, sans-serif;
+	}
+	
+
+.listDivStyleBig{
+    border-color:#000033;
+    border-width:thin;
+    width:95%;
+    overflow: scroll;
+    height: 300px;
+    margin-left: auto ;
+    margin-right: auto ;
+    padding:5px 5px;
+    margin-top:8px ;
+    margin-bottom:8px ;   
+    azimuth:center
+
+}
+.listDivStyleBig1{
+    border-color:#000033;
+    border-width:thin;
+    width:95%;
+    overflow: scroll;
+    height: 800px;
+    margin-left: auto ;
+    margin-right: auto ;
+    padding:5px 5px;
+    margin-top:8px ;
+    margin-bottom:8px ;   
+    azimuth:center
+
+}
+.listRowStyle{
+    /*font-family:georgia,garamond,serif;*/
+    /*font-size:18px;*/
+    font: normal small/1.4em Verdana, sans-serif;
+    
+}
+.listColumnHeadingStyle{
+    /*font-family:georgia,garamond,serif;*/
+    /*font-size:18px;*/
+    font: bold normal small/1.4em Verdana, sans-serif;
+}
+
+.listHeader{
+    font:normal bold medium/1.4em Verdana, sans-serif;
+}
+.tableLayout{
+    table-layout:auto;
+        empty-cells:hide
+
+}
+.divTest{
+    background-color:#AAAAAA;
+    width:20%;
+    height: 15em;
+}
+.divTestFloatRight{
+    background-color:#AAAAAA;
+    width:20%;
+    height: 15em;
+    float:right;
+    
+    
+}
+/*table style*/
+
+
+.tblInner{
+   width:97%; 
+   azimuth:center;
+   margin-left:auto;
+   margin-right:auto;
+   
+}
+
+.tblHeader{
+    width:100%;
+    background-color:#D4E9F8; 
+    border-collapse: collapse;
+    border-style:solid;
+    border-width:thin;
+    azimuth:center;
+    padding:0;
+    border-spacing:0;
+}
+.tldFromContent{
+    font: normal small/1.0em Verdana, sans-serif;
+    font-size:11.5px;
+    border-collapse: collapse;
+    border: small
+    
+}
+
+.tldFromContent1{
+    font: normal small/1.0em Verdana, sans-serif;
+    font-size:11.5px;
+    border-collapse: collapse;
+    border: small;
+    background-color:#9DCBE6;
+    
+}
+.tblList{
+    width:100%;
+    background-color:#D4E9F8; 
+    border-collapse: collapse;
+    border-style:solid;
+    border-width:thin;
+    border-color:#000033;
+    azimuth:center;
+    padding:0;
+    border-spacing:0;
+    
+}
+
+.tblFooter{
+    width:100%;
+    background-color:#D4E9F8; 
+    border-collapse: collapse;
+    border-style:solid;
+    border-width:thin;
+    /*border-color:#000033;*/
+    
+    azimuth:center;
+    padding:0;
+    border-spacing:0;
+}
+/*  td style  */
+
+.tdMsgStyle{
+
+    font:   bold  normal small/1.4em Verdana, sans-serif ;
+    color:red;
+}
+.tdMsgStyleInfo{
+
+    font:   bold  normal small/1.4em Verdana, sans-serif ;
+    color:blue;
+}
+
+.tdMsgStyleDone{
+
+    font:   bold  normal small/1.4em Verdana, sans-serif ;
+    color:green;
+}
+.tdHeadings{
+
+    font:   bold  normal small/1.4em Verdana, sans-serif ;
+    color:black;
+}
+
+.tdActionSuccessResult{
+
+    font:   bold  normal small/1.4em Verdana, sans-serif ;
+    color:blue;
+}
+.tdActionErrorResult{
+
+    font:   bold  normal small/1.4em Verdana, sans-serif ;
+    color:red;
+}
+.tdPath{
+    font:   bold  normal small/1.4em Verdana, sans-serif ;
+    color:blue;
+}	
+.tdWelcomeLabel{
+    font:   bold  normal small/1.4em Verdana, sans-serif ;
+    color:#630;
+}
+.tdWelcomeUser{
+    font:   bold  normal small/1.4em Verdana, sans-serif ;
+    color:#630;
+}
+.tdLogOut{
+    font:   bold normal small/1.4em Verdana, sans-serif ;
+    color:#630;
+    
+}
+
+#inputArea
+{
+	height: 1px;
+    font-family: Verdana, Sans-Serif;
+    font-size: 8px;
+    background-color: #d6e5f4;
+    padding: 0px;
+    
+}
+
+#inputArea input[type="text"], #inputArea textarea
+{
+    font-family: Verdana, Sans-Serif;
+    font-size: 13px;
+    margin-bottom: 5px;
+    display: block;
+    padding: 4px;
+    border: solid 1px #85b1de;
+    width: 300px;
+    height: 2em;
+}
+
+p {
+padding: 0 0 1em;
+}
+.msg_list {
+	margin-left: auto ;
+	margin-right: auto ;
+	padding: 0px;
+	width: 98%;
+	azimuth:center
+}
+.msg_head {
+	padding: 5px 10px;
+	cursor: pointer;
+	position: relative;
+	background-color:#D4E9F8;
+	margin:1px;
+}
+.msg_body {
+	padding: 5px 10px 15px;
+	background-color:#FBFFFF;
+	overflow: scroll;
+	width: 98%;
+	height: 300px;
+	margin-left: auto ;
+	margin-right: auto ;
+	padding:5px 5px;
+	margin-top:8px ;
+	margin-bottom:8px ;
+	azimuth:center
+}
+
+
+.month {
+background-color:black;
+font:bold 12px verdana;
+color:white;
+}
+
+.daysofweek {
+background-color:gray;
+font:bold 12px verdana;
+color:white;
+}
+
+.days {
+font-size: 12px;
+font-family:verdana;
+color:black;
+background-color: lightyellow;
+padding: 2px;
+}
+
+.FORMDEFAULT {
+font-size: 12px;
+font-family:verdana;
+color:black;
+padding: 2px;
+}
+
+.FORMSWAP {
+font-size: 12px;
+font-family:verdana;
+color:black;
+background-color: blue;
+padding: 2px;
+}
+
+.days #today{
+font-weight: bold;
+color: red;
+}
+
+.tlddateIndicator{
+    font: normal small/1.0em Verdana, sans-serif;
+    font-size:9.5px;
+    
+    
+}
+.STATUSMSG {
+font-size: 14px;
+font-family:verdana;
+font-weight:bold;
+color:green;
+padding: 2px;
+}
+.STATUSMSG1 {
+font-size: 14px;
+font-family:verdana;
+font-weight:bold;
+color:green;
+padding: 2px;
+}
+
+.STATUSMSGERR {
+font-size: 14px;
+font-weight:bold;
+font-family:verdana;
+color:red;
+padding: 2px;
+}
+
+
+
+
+.tblBody{
+	
+	width:100%;
+    background-color:#F9AD62; 
+	}
+
+.tblContent{
+    width:100%;
+    background-color:#badaed; 
+    border-collapse: collapse;
+    border-style:solid;
+    border-width:thin;
+    border-color:#000033;
+    font:  normal small/1.4em Verdana, sans-serif;
+    azimuth:center;
+    padding:0;
+    border-spacing:0;
+ }
+ 
+.tblContent1{
+    width:60%;
+    background-color:#9DCBE6; 
+    border-collapse: collapse;
+    border-style:solid;
+    border-width:thin;
+    border-color:#000033;
+    font:  normal small/1.4em Verdana, sans-serif;
+    azimuth:center;
+    padding:0;
+    border-spacing:0;
+ }
+ 
+.serviceEst{
+    font: normal small/1.0em Verdana, sans-serif;
+    font-size:11.5px;
+    border-collapse: collapse;
+    border: small
+    
+}
+
+.tblWelcome{
+    width:100%;
+    background-color:#9DCBE6;
+    border-collapse: collapse;
+    border-style:solid;
+    border-width:thin;
+    border-color:#000033;
+    azimuth:center;
+    padding:0;
+    border-spacing:0;
+
+}
+
+.tblMenuHeading{
+    font:   bold  normal small/1.4em Verdana, sans-serif ;
+    color:black;
+}
+
+.footerNotice{
+    font:   normal small/1.4em Verdana, sans-serif ;
+    color:black;
+    border-collapse: collapse;
+    border-style:solid;
+    border-width:thin;
+    border-color:black;
+    background-color: #F0FFFF;
+}
+
+.tblOuter{
+   width:100%; 
+   background-color:#134B85; 
+}
+
+.tblMenuColor{
+	background-color: #134B85;
+	color: white;
+		
+}
+.newLinks {
+
+    font:   bold italic  small/1.4em Verdana, sans-serif ;
+    color:yellow;
+}
+
+	
+	

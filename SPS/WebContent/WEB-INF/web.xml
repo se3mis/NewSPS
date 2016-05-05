@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" id="WebApp_9" version="2.4">
+  <display-name>Struts2 Application</display-name>
+  <servlet>
+    <servlet-name>AppAjaxServlet</servlet-name>
+    <servlet-class>presentation.ajax.AjaxFrontController</servlet-class>
+    <init-param>
+      <param-name>AjaxCommandHandlerClasses</param-name>
+      <param-value>presentation.ajax.SPSCommandHandler,presentation.ajax.WorkEstimateCommandHandler,presentation.ajax.SPSMasterDataCommandHandler,presentation.ajax.SendForValidationSPSCommandHandler</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AppAjaxServlet</servlet-name>
+    <url-pattern>*.ajax</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <filter-name>struts2</filter-name>
+    <filter-class>org.apache.struts2.dispatcher.FilterDispatcher</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>struts2</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <welcome-file-list>
+    <welcome-file>redirect.jsp</welcome-file>
+  </welcome-file-list>
+  <session-config>
+    <session-timeout>15</session-timeout>
+  </session-config>
+  <security-role>
+    <description>Testing</description>
+    <role-name>SMCTesting</role-name>
+  </security-role>
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>Protected Area</web-resource-name>
+      <url-pattern>/jsp/security/protected/*</url-pattern>
+      <http-method>PUT</http-method>
+      <http-method>DELETE</http-method>
+      <http-method>GET</http-method>
+      <http-method>POST</http-method>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>SMCTesting</role-name>
+    </auth-constraint>
+  </security-constraint>
+  <display-name>gfgfgfgfg</display-name>
+</web-app>

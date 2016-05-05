@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datasources>
+	<no-tx-datasource>
+	<jndi-name>Oracle10gDS</jndi-name>
+	<use-java-context>true</use-java-context>
+	<connection-url>jdbc:oracle:thin:@10.0.5.220:1521:CEB</connection-url>
+	<driver-class>oracle.jdbc.OracleDriver</driver-class>
+	<user-name>mis</user-name>
+	<password>mis</password>
+	<exception-sorter-class-name>org.jboss.resource.adapter.jdbc.vendor.OracleExceptionSorter</exception-sorter-class-name>
+	<metadata>
+		<type-mapping>Oracle10g</type-mapping>
+	</metadata>
+	</no-tx-datasource>
+</datasources> 

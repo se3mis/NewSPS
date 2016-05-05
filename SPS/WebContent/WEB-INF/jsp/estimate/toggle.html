@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ include file="/WEB-INF/jsp/include.jsp"%>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Toggle Panel Test</title>
+</head>
+<body>
+<form name="form1" method="post" action="togglepaneldemo.aspx" id="form1">
+	<div>
+		<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTU2Njg2NDcyNg9kFgICBA9kFgQCAQ9kFgJmDw8WDB4JQmFja0NvbG9yCYDA//8eBVdpZHRoGwAAAAAAAGlAAQAAAB4LQ2VsbFBhZGRpbmcC/////w8eC0NlbGxTcGFjaW5nAgEeCUdyaWRMaW5lcwsqI1N5c3RlbS5XZWIuVUkuV2ViQ29udHJvbHMuR3JpZExpbmVzAB4EXyFTQgKIgjhkFgJmD2QWAmYPDxYEHg1WZXJ0aWNhbEFsaWduCyonU3lzdGVtLldlYi5VSS5XZWJDb250cm9scy5WZXJ0aWNhbEFsaWduAR8FAoCACGRkAgMPZBYCZg8PFgwfAAmA4P//HwEbAAAAAAAAaUABAAAAHwIC/////w8fAwIBHwQLKwQAHwUCiII4ZBYCZg9kFgJmDw8WBB8GCysFAR8FAoCACGRkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBRxUb2dnbGVQYW5lbDEkY3RsMDUkQ2hlY2tCb3gxWRnDXsYzPs9NOOpQSC3MD2AOF0U=" type="hidden">
+	</div>
+
+	<div>
+		<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBgKw+qD7BgLl0cP1DQKFv9r9DQLGu6fEAwKFv+7zDwKM54rGBtdiw5d+ldT+bfcWqloSbadkOYKB" type="hidden">
+	</div>
+	<div>
+		<span id="TogglePanel1" cellspacing="1" style="display: inline-block; background-color: rgb(255, 192, 128); width: 200px;"> 
+			<table style="background-color: rgb(255, 192, 128); width: 200px;" border="0" cellspacing="1">
+			<tbody>
+			<tr>
+				<td valign="top">
+				 	<img onclick="var hidden1=document.getElementById('TogglePanel1_ctl06');var pe=document.getElementById('TogglePanel1_ctl04');var pc=document.getElementById('TogglePanel1_ctl02');if(hidden1.value!='col') { pe.style.display='none'; pc.style.display='block'; this.src='/aspnet/images/btnPlus2.gif'; hidden1.value='col';}else{ pe.style.display='block'; pc.style.display='none'; this.src='/aspnet/images/btnMinus2.gif'; hidden1.value='';}" src="togglepaneldemo.aspx_files/btnPlus2.gif" style="border-width: 0px;">
+				</td>
+				<td>
+					<div id="TogglePanel1_ctl02" style="display: block;">
+						<span>Title goes here </span>
+					</div>
+					<div id="TogglePanel1_ctl04" style="display: none;">
+					<span>
+						Full content goes here.<br>
+						Full content goes here.<br>
+						Full content goes here.<br>
+						Full content goes here.<br>
+						<a href="http://www.rekenwonder.com/">visit our website</a> <br>
+						<input id="TogglePanel1_ctl05_CheckBox1" name="TogglePanel1$ctl05$CheckBox1" type="checkbox"><label for="TogglePanel1_ctl05_CheckBox1">Try this box</label> </span></div>
+						</td>
+			</tr>
+			</tbody>
+			</table>
+			<input name="TogglePanel1$ctl06" id="TogglePanel1_ctl06" value="col" type="hidden">
+		</span>
+			<br>
+			 
+		<span id="TogglePanel2" style="display: inline-block; background-color: rgb(255, 224, 128); width: 200px;">
+			<table style="background-color: rgb(255, 224, 128); width: 200px;" border="0" cellspacing="1">
+			<tbody>
+			<tr>
+				<td valign="top">
+					<img onclick="var hidden1=document.getElementById('TogglePanel2_ctl06');var pe=document.getElementById('TogglePanel2_ctl04');var pc=document.getElementById('TogglePanel2_ctl02');if(hidden1.value!='col') { pe.style.display='none'; pc.style.display='block'; this.src='/aspnet/images/btnPlus2.gif'; hidden1.value='col';}else{ pe.style.display='block'; pc.style.display='none'; this.src='/aspnet/images/btnMinus2.gif'; hidden1.value='';}" src="togglepaneldemo.aspx_files/btnMinus2.gif" style="border-width: 0px;">
+				</td>
+				<td>
+					<div id="TogglePanel2_ctl02" style="display: none;">
+						<span>
+							<b>Another title here</b><br>
+							With a subtitle
+						</span>
+					</div>
+					<div id="TogglePanel2_ctl04" style="display: block;">
+						<span>
+							Full content goes here.<br>
+							Full content goes here.<br>
+							Full content goes here.<br>
+							Full content goes here.<br>
+							<a href="http://www.rekenwonder.com/">visit our website</a> <br>
+							<input name="TogglePanel2$ctl05$TextBox1" id="TogglePanel2_ctl05_TextBox1" type="text"> 
+						</span>
+					</div>
+				</td>
+
+			</tr>
+		</tbody>
+	</table>
+	<input name="TogglePanel2$ctl06" id="TogglePanel2_ctl06" type="hidden">
+	</span>
+<br>
+Rest of the page goes here<br>
+<input name="Button1" value="Postback test" id="Button1" type="submit"></div>
+</form>
+</body>
+</html>

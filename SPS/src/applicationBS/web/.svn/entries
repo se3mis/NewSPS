@@ -1,0 +1,168 @@
+10
+
+dir
+0
+http://manoj-pc:81/svn/smc/trunk/src/application/web
+http://manoj-pc:81/svn/smc
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+
+
+
+
+
+
+
+
+
+
+
+b84447dc-504d-c248-a06e-f1f7363b7095
+
+GenerateIdNo.java
+file
+
+
+
+add
+
+ApplicationStatus.java
+file
+
+
+
+add
+
+AllocateApplication.java
+file
+
+
+
+add
+
+PathStore.java
+file
+
+
+
+add
+
+ModifyCustomer.java
+file
+
+
+
+add
+
+ApplicatinSearch.java
+file
+
+
+
+add
+
+ModifyApplication.java
+file
+
+
+
+add
+
+SaveApplicationData.java
+file
+
+
+
+add
+
+NewApplication.java
+file
+
+
+
+add
+
+ConfirmApplication.java
+file
+
+
+
+add
+
+SaveApplication.java
+file
+
+
+
+add
+
+TestPara.java
+file
+
+
+
+add
+
+Message.java
+file
+
+
+
+add
+
+GenerateDirect.java
+file
+
+
+
+add
+
+ApplicationForm.java
+file
+
+
+
+add
+
+ApplicationSearchResult.java
+file
+
+
+
+add
+
+ApplicationCR.java
+file
+
+
+
+add
+
+LoanApp.java
+file
+
+
+
+add
+
+ApplicationTC.java
+file
+
+
+
+add
+
+Navigate.java
+file
+
+
+
+add
+
